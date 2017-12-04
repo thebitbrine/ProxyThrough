@@ -292,6 +292,15 @@ namespace ProxyThrough
                     if (contents == null || BasicListValidation(contents) == false)
                     {
                         contents = wc.DownloadString("http://bit.ly/2AnAbDK");
+                        if (contents == null || BasicListValidation(contents) == false)
+                        {
+                            contents = wc.DownloadString("spys.me/proxy.txt");
+                        }
+                        if (contents == null || BasicListValidation(contents) == false)
+                        {
+                            contents = wc.DownloadString("pxy.thebitbrine.com/proxy.txt");
+                        }
+
                         if (BasicListValidation(contents) == false)
                             ListAvailable = false;
                         else

@@ -41,7 +41,7 @@
             this.PingAllButton = new System.Windows.Forms.Button();
             this.StatusUpdater = new System.Windows.Forms.Timer(this.components);
             this.CPSLabel = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.GithubLink = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -170,19 +170,20 @@
             this.CPSLabel.Text = "CPS";
             this.CPSLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // linkLabel1
+            // GithubLink
             // 
-            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.linkLabel1.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(693, 351);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(43, 13);
-            this.linkLabel1.TabIndex = 9;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "GitHub";
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Blue;
+            this.GithubLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.GithubLink.AutoSize = true;
+            this.GithubLink.Cursor = System.Windows.Forms.Cursors.Default;
+            this.GithubLink.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GithubLink.Location = new System.Drawing.Point(693, 351);
+            this.GithubLink.Name = "GithubLink";
+            this.GithubLink.Size = new System.Drawing.Size(43, 13);
+            this.GithubLink.TabIndex = 9;
+            this.GithubLink.TabStop = true;
+            this.GithubLink.Text = "GitHub";
+            this.GithubLink.VisitedLinkColor = System.Drawing.Color.Blue;
+            this.GithubLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.GithubLink_LinkClicked);
             // 
             // label1
             // 
@@ -225,7 +226,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(751, 368);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.GithubLink);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CPSLabel);
             this.Controls.Add(this.PingAllButton);
@@ -260,7 +261,7 @@
         private System.Windows.Forms.Button PingAllButton;
         private System.Windows.Forms.Timer StatusUpdater;
         private System.Windows.Forms.Label CPSLabel;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel GithubLink;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox Logo;
         private System.Windows.Forms.Panel panel1;

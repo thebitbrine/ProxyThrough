@@ -25,16 +25,14 @@ namespace ProxyThrough
         public bool Connected = false;
         public bool ListAvailable = false;
         public bool PingDone = false;
-        public bool ReadyToPopulate = false;
-        private static bool settingsReturn, refreshReturn;
-
         public List<ProxyItem> ProxyList = new List<ProxyItem>();
         public List<string> RawList = new List<string>();
-
+        public bool ReadyToPopulate = false;
         public string TempPath = System.IO.Path.GetTempPath() + "ProxyThroughList.json";
         public string UIStatus = "Ready...";
-
+        private static bool settingsReturn, refreshReturn;
         private UsefulMethods UM = new UsefulMethods();
+        
 
         #endregion Fields
 
@@ -388,10 +386,16 @@ namespace ProxyThrough
                 SetProxyButton.Text = "Set Proxy";
             }
         }
+        
+        private void GithubLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://github.com/thebitbrine/ProxyThrough/");
+        }
 
         #endregion Methods
 
         #region Classes
+
 
         public class ProxyItem
         {

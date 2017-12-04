@@ -2,7 +2,7 @@
 ### A Portable Anti-Censorship Program
 
 #### What does it do?
-It basically grabs latest proxies available around the web, benchamarks them and connects to the fastest proxy server.
+It basically grabs latest proxies available around the web, benchmarks them and connects to the fastest proxy server.
 
 #### How does it look like?
 ![ProxyThrough v1.2](https://i.imgur.com/91EWskD.png)

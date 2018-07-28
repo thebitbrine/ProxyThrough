@@ -1,5 +1,5 @@
 # ProxyThrough
-### A Portable Anti-Censorship Program
+### Portable Anti-Censorship Program
 
 #### What does it do?
 It basically grabs latest proxies available around the web, benchmarks them and connects to the fastest proxy server.
